@@ -1,0 +1,94 @@
+
+/* Mobile First CSS */
+
+.body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #404040;
+  max-width: 1280px;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  color: #fff;
+  background-color: #9480e4;
+  background-image: url("./images/intro-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: black 0 0 2px;
+  margin-top: 1em;
+}
+
+.beta-text {
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.16em 0;
+}
+
+.subheading {
+  color: #575757;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  padding: 0 0.5em;
+}
+
+.img-main {
+  width: 60%;
+  border-radius: 50%;
+  margin: 2em 0;
+  border: solid gray 1px;
+}
+
+
+@media (min-width: 576px) {
+  .body {
+    flex-direction: row;
+    align-items: start;
+    height: 100vh;
+  }
+
+  .intro {
+    width: 50%;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    width: 50%;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .img-main{
+    width: 50%;
+  }
+}
